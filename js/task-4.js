@@ -10,8 +10,8 @@ function submitHandler(event) {
     return alert("All form fields must be filled in");
   } else {
     const info = {
-      email: email.value,
-      password: password.value,
+      email: email.value.trim(),
+      password: password.value.trim(),
     };
     console.log(info);
     event.currentTarget.reset();
